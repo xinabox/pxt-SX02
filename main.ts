@@ -4,7 +4,7 @@ namespace SX02 {
     let ADC_REG_CONF = 0x02
     let ADC_CONF_CYC_TIME_256 = 0x80
     let ADC_REG_RESULT = 0x00
-    let voltage: number
+    let voltage: number = 0
     let HIGH_STATE = 1.0
     let LOW_STATE = 0.5
     let state: boolean
@@ -34,7 +34,6 @@ namespace SX02 {
         let a: NumberFormat.UInt8LE
         let b: NumberFormat.UInt8LE
         let data: NumberFormat.UInt16LE
-        let voltage: number
 
         data = getUInt16BE(ADC_REG_RESULT);
 
