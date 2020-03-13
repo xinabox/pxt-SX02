@@ -48,7 +48,7 @@ namespace SX02 {
     //% block="SX02 get voltage"
     export function getVoltage(): number {
         readVoltage()
-        return voltage
+        return voltage;
     }
 
 }
